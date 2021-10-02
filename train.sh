@@ -1,0 +1,1 @@
+DGLBACKEND=pytorch python3 -m dglke.train --model_name RESCAL --dataset OBL2021 --batch_size 2048 --neg_sample_size 1024 --hidden_dim 300 --gamma 12.0 --lr 0.05 --max_step 350000 --log_interval 1000 --batch_size_eval 512 --regularization_coef 3.00E-07 -rn 3 --gpu 0 1 --mix_cpu_gpu --async_update --force_sync_interval 1000 -adv -a 1.0 --rel_part
